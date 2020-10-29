@@ -64,12 +64,13 @@ body{
     margin:0 auto;
     font-size:1.8rem;
     line-height:1.5;
-    color:#4f4f4f;
+    color: antiquewhite;
     font-family: 'Inria Serif', serif;
-    background-color: #fffafa;
+    background-color:darkcyan;
 
 }
 h1{
+    color:black;
     width:50vw;
     height:9vh;
     padding: 1% 2%;
@@ -128,6 +129,7 @@ header{
     transition:.3s;
 }
 h2{
+    color:black;
     margin:1% auto;
     text-align: center;
     font-size:4rem;
