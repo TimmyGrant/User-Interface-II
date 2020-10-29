@@ -1,1 +1,250 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*General Styles*/
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    width: 100%;
+    border:1px solid grey;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    width:100%;
+    margin:0 auto;
+    font-size:1.8rem;
+    line-height:1.5;
+    color:#4f4f4f;
+    font-family: 'Inria Serif', serif;
+    background-color: #fffafa;
+
+}
+h1{
+    width:50vw;
+    height:15vh;
+    padding: 1% 2%;
+    margin:1% auto;
+    text-align:center;
+    letter-spacing:2px;
+    font-family: 'Caveat', cursive;
+    font-weight:bolder;
+    font-size:6rem;
+    text-shadow: 2px 2px violet;
+
+}
+header{
+    widows: 100%;
+    height:30vh;
+    margin:0 auto;
+    padding:2%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    /* display:flex;
+    justify-content: center; */
+}
+.banner{
+    width:100%;
+    height:50vh;
+    background:url(https://images7.alphacoders.com/104/thumb-1920-1048312.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.dnav{
+    margin-top:1%;
+    display:flex;
+    height:10vh;
+    flex-flow:nowrap;
+    
+}
+.nav a{
+    margin:3%;
+    padding:8px 15px;
+    text-decoration: none;
+    background-color: darkslateblue;
+    color:violet;
+    border-radius:10px;
+}
+.nav a:hover{
+    background-color:violet;
+    color:darkslateblue;
+    transition:.3s;
+}
+h2{
+    margin:1% auto;
+    text-align: center;
+    font-size:4rem;
+    font-family: 'Caveat', cursive;
+    text-shadow: 1.5px 1.5px violet;
+}
+.toppar{
+    width:60%;
+    margin:2% auto 3%;
+    text-align:center;
+    font-size:1.4rem;
+}
+.banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width:10%;
+    margin:0 auto;
+    margin-bottom:1%;
+}
+.button button{
+    width:12rem;
+    height:4vh;
+    margin-left:10%;
+    text-align:center;
+    background-color:violet;
+    border:2px solid green;
+    border-radius:10px;
+}
+.bold{
+    font-weight: bold;
+}
+.bottom{
+    margin:4% auto;
+    height:50vh;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.imgone{
+    width:15%;
+    height:45vh;
+    background:url(https://i.pinimg.com/originals/33/d7/99/33d7994e00c5098bad5eb9752e47bdfd.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center top;
+}
+.imgtwo{
+    width: 15%;
+    height:45vh;
+    background:url(https://giantbomb1.cbsistatic.com/uploads/scale_medium/0/1070/221095-gearsofwar.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.text{
+    text-align: center;
+    width:12%;
+}
+.imgthree{
+    width: 15%;
+    height:45vh;
+    background:url(https://static1.squarespace.com/static/5a79d837aeb625f12ad4e9b2/t/5f4fa47cf41ed579a075175f/1599055049849/Skateboard+England+-+Paul+Scott.jpg?format=1500w);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center top;
+}
+.imgfour{
+    width:15%;
+    height:45vh;
+    background:url(https://images.unsplash.com/photo-1591311337241-cecfd26f1da1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center top;
+}
+footer{
+    height:15vh;
+    text-align: center;
+    /* margin:0 auto; */
+    background:url(https://wallup.net/wp-content/uploads/2015/12/102302-abstract.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer button{
+    width:12rem;
+    height:4vh;
+    text-align:center;
+    background-color:violet;
+    border:2px solid green;
+    border-radius:10px;
+
+}
+.contsec, .projsec, .aboutsec{
+    height:70vh;
+}
+h3{
+
+    font-family: 'Caveat', cursive;
+    color:white;
+    font-size:3rem;
+    text-shadow: 1.5px 1.5px magenta;
+    
+}
+.socfoot{
+    width:100%;
+}
+.social{
+    width:100%;
+} 
+ .socfoot .social a{
+    width:100%;
+    color:white;
+    font-size:4rem;
+} 
