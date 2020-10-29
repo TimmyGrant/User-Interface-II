@@ -54,7 +54,7 @@ table {
     padding:0;
     margin:0;
     width: 100%;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 html{
     font-size:62.5%;
