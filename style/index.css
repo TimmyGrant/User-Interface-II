@@ -71,14 +71,14 @@ body{
 }
 h1{
     width:50vw;
-    height:15vh;
+    height:9vh;
     padding: 1% 2%;
     margin:1% auto;
     text-align:center;
     letter-spacing:2px;
     font-family: 'Caveat', cursive;
     font-weight:bolder;
-    font-size:6rem;
+    font-size:8rem;
     text-shadow: 2px 2px violet;
 
 }
@@ -106,14 +106,16 @@ header{
     background-position: bottom;
 }
 .dnav{
-    margin-top:1%;
+    order:-1;
+    position:fixed;
+    /* margin-top:1%; */
     display:flex;
-    height:10vh;
+    height:25vh;
     flex-flow:nowrap;
     
 }
 .nav a{
-    margin:3%;
+    margin:5%;
     padding:8px 15px;
     text-decoration: none;
     background-color: darkslateblue;
