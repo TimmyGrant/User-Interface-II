@@ -48,6 +48,37 @@ table {
 	border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap') repeat scroll 0 0 rgba(0, 0, 0 , 0);
+
+body {
+  background: #fff;
+}
+
+/* .title {
+  font-size: 5.6rem;
+  font-family: 'Lobster', cursive;
+} */
+
+.wrapper {
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  color: #eee;
+  width: 100%;
+  height: 80vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+
 /*General Styles*/
 *{
     box-sizing: border-box;
@@ -70,34 +101,36 @@ body{
 
 }
 h1{
-    color:black;
+    color:#4f4f4f;
     width:50vw;
-    height:9vh;
-    padding: 1% 2%;
-    margin:1% auto;
+    height:15vh;
+    padding: 10% 2%;
+    margin:0% auto;
     text-align:center;
     letter-spacing:2px;
     font-family: 'Caveat', cursive;
     font-weight:bolder;
     font-size:8rem;
-    text-shadow: 2px 2px violet;
+    text-shadow: 2px 2px magenta;
 
 }
 header{
     widows: 100%;
-    height:30vh;
-    margin:0 auto;
-    padding:2%;
+    height:35vh;
+    margin:-2% auto;
+    padding:5%, 0 10%;
     text-align: center;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color:black;
+    opacity:.7;
 }
-.header{
-    /* display:flex;
-    justify-content: center; */
-}
+/* .header{
+    display:flex;
+    justify-content: center; 
+} */
 .banner{
     width:100%;
     height:50vh;
@@ -105,42 +138,69 @@ header{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    border-top:4px double magenta;
+    border-bottom:7px double magenta;
 }
 .dnav{
     order:-1;
     position:fixed;
-    /* margin-top:1%; */
+    margin-top:-8%;
+    /* padding-top:5%; */
     display:flex;
-    height:25vh;
-    flex-flow:nowrap;
+    height:6vh;
+    flex-flow:nowrap; 
+    justify-content: center; 
+    align-items: center;
+    /* background-color:black;
+    opacity:.7; */
     
 }
+nav{
+    position:fixed;
+    /* margin-left:50%; */
+    /* margin-top: 6%;
+    height:10vh; */
+    /* background-color:red; */
+    /* height:3vh; */
+}
 .nav a{
-    margin:5%;
+    margin:0 5%;
     padding:8px 15px;
     text-decoration: none;
-    background-color: darkslateblue;
-    color:violet;
+    color:magenta;
     border-radius:10px;
 }
 .nav a:hover{
-    background-color:violet;
-    color:darkslateblue;
+    background-color:magenta;
+    color:rgb(99, 0, 99);
     transition:.3s;
 }
 h2{
-    color:black;
-    margin:1% auto;
+    color:#4f4f4f;
+    margin:1% auto 0;
+    padding-top:5%;
     text-align: center;
     font-size:4rem;
     font-family: 'Caveat', cursive;
-    text-shadow: 1.5px 1.5px violet;
+    text-shadow: 1.5px 1.5px magenta;
+}
+.sectwo{
+    background-color: black;
+    opacity: .7;
+}
+.top{
+    margin:0 auto;
 }
 .toppar{
     width:60%;
-    margin:2% auto 3%;
+    height:18vh;
+    margin:5% auto 10%;
+    padding-top:0;
     text-align:center;
     font-size:1.4rem;
+    color:cyan;
+    background-color: black;
+    opacity: .7;
 }
 .banner{
     display:flex;
@@ -153,13 +213,19 @@ h2{
     margin-bottom:1%;
 }
 .button button{
-    width:12rem;
-    height:4vh;
-    margin-left:10%;
+    width:20rem;
+    height:6vh;
+    margin-left:-15%;
     text-align:center;
-    background-color:violet;
-    border:2px solid green;
+    color:darkgreen;
+    background-color:magenta;
+    border:8px double green;
     border-radius:10px;
+    font-size:2.5rem;
+    font-weight:bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 1.5px darkblue;
+    opacity: .8;
 }
 .bold{
     font-weight: bold;
@@ -172,6 +238,9 @@ h2{
     align-items: center;
     justify-content: space-evenly;
 
+}
+.imgone, .imgtwo, .imgthree, .imgfour{
+    border:4px ridge purple;
 }
 .imgone{
     width:15%;
@@ -222,13 +291,19 @@ footer{
 
 }
 footer button{
-    width:12rem;
-    height:4vh;
+    width:20rem;
+    height:6vh;
+    margin-left:-15%;
     text-align:center;
-    background-color:violet;
-    border:2px solid green;
+    color:darkgreen;
+    background-color:magenta;
+    border:5px double green;
     border-radius:10px;
-
+    font-size:2rem;
+    /* font-weight:bold; */
+    letter-spacing: 2px;
+    text-shadow: 1.5px 2.5px darkblue;
+    opacity: .6;
 }
 .contsec, .projsec, .aboutsec{
     height:70vh;
@@ -239,10 +314,15 @@ h3{
     color:white;
     font-size:3rem;
     text-shadow: 1.5px 1.5px magenta;
+    text-decoration: underline;
     
+}
+footer{
+    border-top:2px solid black;
 }
 .socfoot{
     width:100%;
+
 }
 .social{
     width:100%;
