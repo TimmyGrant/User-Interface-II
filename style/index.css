@@ -1,1 +1,441 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap') repeat scroll 0 0 rgba(0, 0, 0 , 0); */
+
+body {
+  background: #fff;
+}
+
+/* .title {
+  font-size: 5.6rem;
+  font-family: 'Lobster', cursive;
+} */
+
+.wrapper {
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  color: #eee;
+  width: 100%;
+  height: auto;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+
+/*General Styles*/
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    width: 100%;
+    /* border:1px solid grey; */
+}
+html{
+    font-size:62.5%;
+}
+body{
+    width:100%;
+    margin:0 auto;
+    font-size:1.8rem;
+    line-height:1.5;
+    color: antiquewhite;
+    font-family: 'Inria Serif', serif;
+    background-color:darkcyan;
+
+}
+h1{
+    color:#4f4f4f;
+    width:90vw;
+    height:15vh;
+    padding: 10% 2%;
+    margin:0% auto 2%;
+    text-align:center;
+    letter-spacing:2px;
+    font-family: 'Caveat', cursive;
+    font-weight:bolder;
+    font-size:8rem;
+    text-shadow: 2px 2px magenta;
+
+}
+header{
+    widows: 100%;
+    height:35vh;
+    margin:-2% auto;
+    padding:5%, 0 10%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    opacity:.6;
+}
+/* .header{
+    display:flex;
+    justify-content: center; 
+} */
+.banner{
+    width:100%;
+    height:50vh;
+    background:url(https://images7.alphacoders.com/104/thumb-1920-1048312.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-top:4px double magenta;
+    border-bottom:7px double magenta;
+}
+.dnav{
+    order:-1;
+    position:fixed;
+    margin-top:-8%;
+    /* padding-top:5%; */
+    display:flex;
+    height:6vh;
+    flex-flow:nowrap; 
+    justify-content: center; 
+    align-items: center;
+    background-color:black;
+    opacity:.6;
+    
+}
+/* header nav{
+    position:fixed;
+    margin-left:50%;
+    margin-top: 6%;
+    height:10vh;
+    background-color:red;
+    height:3vh;
+} */
+header .nav a{
+    /* position:fixed; */
+    margin:0 5%;
+    padding:8px 15px;
+    text-decoration: none;
+    color:magenta;
+    text-shadow:3px 2px cyan;
+    border-radius:10px;
+}
+header .nav a:hover{
+    background-color:magenta;
+    color:cyan;
+    opacity:1;
+    text-shadow:none;
+    transition:.3s;
+}
+h2{
+    color:#4f4f4f;
+    margin:0% auto 0;
+    padding-top:4%;
+    text-align: center;
+    font-size:4rem;
+    font-family: 'Caveat', cursive;
+    text-shadow: 1.5px 1.5px magenta;
+}
+.sectwo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top:2%;
+    /* margin-bottom: 4%; */
+    background-color: black;
+    opacity: .6;
+}
+.top{
+    margin:0 auto;
+}
+.toppar{
+    display:flex;
+    align-items:center;
+    width:60%;
+    height:auto;
+    margin:0% auto 0%;
+    /* padding-top:; */
+    padding:3% 0 5%;
+    text-align:center;
+    font-size:1.4rem;
+    color:cyan;
+    background-color: black;
+    opacity: .7;
+}
+.banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width:10%;
+    margin:0 auto;
+    margin-bottom:1%;
+}
+button{
+    padding-bottom:2.2rem;
+}
+.button button{
+    width:20rem;
+    height:6vh;
+    margin-left:-15%;
+    text-align:center;
+    color:darkgreen;
+    background-color:magenta;
+    border:8px double green;
+    border-radius:10px;
+    font-size:2.5rem;
+    font-weight:bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 1.5px darkblue;
+    opacity: .8;
+}
+.button button:hover{
+    transform:scale(1.2);
+    transition:.8s;
+}
+.bold{
+    font-weight: bold;
+}
+.bottom{
+    margin:4% auto;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.imgone, .imgtwo, .imgthree, .imgfour{
+    border:4px ridge purple;
+}
+.imgone{
+    width:15%;
+    height:45vh;
+    background:url(https://i.pinimg.com/originals/33/d7/99/33d7994e00c5098bad5eb9752e47bdfd.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center top;
+}
+.imgtwo{
+    width: 15%;
+    height:45vh;
+    background:url(https://giantbomb1.cbsistatic.com/uploads/scale_medium/0/1070/221095-gearsofwar.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.text{
+    text-align: center;
+    width:12%;
+}
+.imgthree{
+    width: 15%;
+    height:45vh;
+    background:url(https://static1.squarespace.com/static/5a79d837aeb625f12ad4e9b2/t/5f4fa47cf41ed579a075175f/1599055049849/Skateboard+England+-+Paul+Scott.jpg?format=1500w);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center top;
+}
+.imgfour{
+    width:15%;
+    height:45vh;
+    background:url(https://images.unsplash.com/photo-1591311337241-cecfd26f1da1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center top;
+}
+footer{
+    height:15vh;
+    text-align: center;
+    /* margin:0 auto; */
+    background:url(https://wallup.net/wp-content/uploads/2015/12/102302-abstract.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer button{
+    width:20rem;
+    height:6vh;
+    /* margin-left:-15%; */
+    text-align:center;
+    color:darkgreen;
+    background-color:magenta;
+    border:5px double green;
+    border-radius:10px;
+    font-size:2rem;
+    /* font-weight:bold; */
+    letter-spacing: 2px;
+    text-shadow: 1.5px 2.5px darkblue;
+    opacity: .6;
+}
+.contsec, .projsec, .aboutsec{
+    height:70vh;
+}
+h3{
+
+    font-family: 'Caveat', cursive;
+    color:white;
+    font-size:3rem;
+    text-shadow: 1.5px 1.5px magenta;
+    text-decoration: underline;
+    
+}
+footer{
+    border-top:2px solid black;
+    height:20vh;
+}
+footer nav a:hover{
+    border:1px 1px cyan;
+}
+.social{
+    display:flex;
+    justify-content: center;
+}
+.link{
+    width:6%;
+    /* border:3px 3px green; */
+}
+.link:hover{
+    width:6%;
+    border-radius:.5rem;
+    height:auto;
+    background-color:magenta;
+    transition: .7s;
+    transform:scale(1.2);
+}
+.dfoot button:hover{
+    transform:scale(1.1);
+    opacity: .7;
+    transition:.3s;
+}
+
+@media(max-width:800px){
+    header .nav a{
+        margin:0% 3%;
+    }
+    .bottom{
+        height:auto;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content:space-evenly;
+
+    }
+    .button{
+        width:18rem;
+        display:flex;
+        justify-content:center;
+        margin-left:42%;
+    }
+    button{
+        padding-bottom:2.2rem;
+    }
+    .imgone, .imgtwo, .imgthree, .imgfour{
+        width:40%;
+        height:100vh;
+    }
+    .text{
+        margin:5% auto;
+        width:100%;
+    }
+    footer{
+        height:25vh;
+        display:flex;
+        flex-direction: column;
+    }
+    .dfoot{
+        margin-top:1%;
+    }
+}
+
+
+@media(max-width:500px){
+    header{
+        background:none;
+    }
+    header .nav a{
+        margin:2% 20%;
+    }
+    .dnav{
+        margin: 5% auto 10%;
+        opacity:1;
+        background: none;
+    }
+    .header{
+        margin:10% auto 0;
+        /* padding:40% auto; */
+        opacity:1;
+        background:none;
+    }
+    h1{
+        font-size:10rem;
+        
+    }
+    .sectwo{
+        margin-top:50%;
+        opacity:1;
+        background:none;
+    }
+    .text{
+        padding:10%;
+    }
+    .toppar{
+        background:none;
+    }
+}
